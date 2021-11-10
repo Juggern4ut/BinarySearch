@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container{
+  text-align: right;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-size: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+button {
+  appearance: none;
+  border: none;
+  padding: 10px 30px;
+  border-left: 1px solid;
+  font-size: 20px;
+}
+
+main form,
+main table,
+main section {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border: 1px solid #000;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+main form {
+  padding: 0;
+}
+
+main section .row {
+  border-bottom: 1px solid #000;
+}
+
+table tbody tr:first-of-type td{
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  line-height: 30px;
+}
+
+table td {
+  text-align: center;
+  border: 1px solid #000;
+  width: 1%;
+  line-height: 20px;
+}
+
+main section .row > div {
+  border-right: 1px solid;
+  text-align: center;
+}
+
+main section .row > div:last-of-type {
+  border: none;
+}
+
+main section .row:last-of-type {
+  border-bottom: none;
+}
+
+.match {
+  background-color: #d6f8d6;
+}
+
+.mismatch {
+  background-color: #f0d9d9;
+}
+
+#log {
+  font-family: "consolas";
+}

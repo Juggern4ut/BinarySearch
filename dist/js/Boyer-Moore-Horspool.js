@@ -38,7 +38,7 @@ function BoyerMooreHorspool(text, pattern) {
 function BoyerMooreHorspoolStepped(text, pattern, cI) {
     const shiftArray = getShiftArray(pattern);
     let currentIndex = cI;
-    if (currentIndex + pattern.length >= text.length) {
+    if (currentIndex + pattern.length > text.length) {
         addLogEntry("OUT OF BOUNDS! PATTERN NOT FOUND");
         return {
             currentIndex: currentIndex,

@@ -54,7 +54,7 @@ function BoyerMooreHorspoolStepped(
   const shiftArray: number[] = getShiftArray(pattern);
   let currentIndex = cI;
 
-  if (currentIndex + pattern.length >= text.length) {
+  if (currentIndex + pattern.length > text.length) {
     addLogEntry("OUT OF BOUNDS! PATTERN NOT FOUND");
     return {
       currentIndex: currentIndex,
